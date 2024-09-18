@@ -4,48 +4,45 @@
     <title>Password to Radioactivity Site</title>
   </head>
   <style>
-    .heading{
+    .heading {
       background-color: olive;
       text-align: center;
       font-size: 100px;
     }
-    .text{
+    .text {
       background-color: olive;
       text-align: center;
       font-size: 50px;
     }
-    
   </style>
   <script>
-    function checkPassword(){
+    function checkPassword() {
       var password = document.getElementById("passwordBox");
       var passwordText = password.value;
-      if (passwordText == "w289821"){
-        alert("Correct, welcome!")
+      
+      // Correct the password by making it a string
+      if (passwordText == "w289821") {
+        alert("Correct, welcome!");
         return true;
-      }
-      else{
-        alert("Since you got this wrong, you are not the person that is supposed to be here, just a hacker who wants to learn about radioactivity on the wrong site. GET OUT OF HERE!")
+      } else {
+        alert("Since you got this wrong, you are not the person that is supposed to be here, just a hacker who wants to learn about radioactivity on the wrong site. GET OUT OF HERE!");
         return false;
       }
     }
   </script>
   <body>
-    <p class="heading"/>
+    <p class="heading">
       The Radiation Website
     </p>
-    <p class="text"/>
+    <p class="text">
       This is a place to view radiation. Please submit the password below to proceed.
     </p>
-    <p class="text"/>
-      Password:<input id="passwordBox" type="password">
+    <p class="text">
+      Password: <input id="passwordBox" type="password">
     </p>
      
-   <a href="https://nikoskalnis.github.io/website/" onclick="return checkPassword();">
-     Click here to submit password and view website
-  </a>
-</body>
-</html>
-  
+    <a href="https://nikoskalnis.github.io/website/" onclick="return checkPassword();">
+      Click here to submit password and view website
+    </a>
   </body>
 </html>
